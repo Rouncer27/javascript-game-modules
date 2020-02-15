@@ -1,9 +1,17 @@
+import knight from "./images/hero-knight.png";
+import wizard from "./images/hero-wizard.png";
+
 class Character {
-  constructor(name = "trevor", health = 100) {
+  constructor(name, heroType, gravitar, health, strength, agility, speed) {
     this.name = name;
+    this.heroType = heroType;
+    this.gravitar = gravitar;
     this.health = health;
-    this.agility;
-    this.speed;
+    this.strength = strength;
+    this.agility = agility;
+    this.speed = speed;
+    this.level = 1;
+    this.exp = 0;
   }
 
   sayHi() {
@@ -15,43 +23,19 @@ class Character {
   }
 }
 
-export class Warrior extends Character {
-  constructor(name, health) {
-    super(name, health);
-    this.heroType = "Warrior";
-    this.name = name;
-    this.health = 300;
+export class Knight extends Character {
+  constructor(name) {
+    super(name, "knight", knight, 300, 20, 10, 25);
   }
 }
 
-export class Mage extends Character {
-  constructor(name, health, spell) {
-    super(name, health);
+export class Wizard extends Character {
+  constructor(name, spell = "fire") {
+    super(name, "wizard", wizard, 125, 7, 5, 15);
     this.spell = spell;
   }
 }
 
-function CharacterTwo() {
-  this.name = name;
-  this.health = 100;
-
-  this.sayHiInside = function() {
-    console.log(`inside hi ${this.name} and my health is ${this.health}`);
-  };
-}
-
-CharacterTwo.prototype.sayHi = function(name) {
-  console.log(`inside hi ${this.name} and my health is ${this.health}`);
-};
-
-export const CreateCharacter = function() {
-  console.log("creating a character!!");
-
-  const hero = new Mage("suzy the grey", 150, "fireballs");
-  return hero;
-};
-
-export const CreateCharacterTwo = function() {
-  const heroTwo = new CharacterTwo("Blue");
-  return heroTwo;
+export const allTheHeros = function() {
+  return [{ heroType: "knight" }, { heroType: "wizard" }];
 };
