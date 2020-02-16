@@ -1,0 +1,42 @@
+@keyframes play {
+  0% {
+    width: calc(119px + 10px);
+    height: 167px;
+    background-position: -0 -527px;
+  }
+
+  25% {
+    width: calc(121px + 10px);
+    height: 152px;
+    background-position: -0 -375px;
+  }
+
+  50% {
+    width: calc(143px + 10px);
+    height: 135px;
+    background-position: -0 -240px;
+  }
+
+  75% {
+    width: calc(145px + 10);
+    height: 120px;
+    background-position: -0 -0;
+  }
+
+  100% {
+    width: calc(149px + 10px);
+    height: 120px;
+    background-position: -0 -120px;
+  }
+}
+
+.heroDashboard__gravitar {
+  .knight {
+    width: calc(119px + 10px);
+    height: 167px;
+    background-image: url("../images/knight-actions/knight-fall.png");
+    background-size: initial;
+    background-position: -0 -527px;
+    animation: play 0.5s steps(1) 5s forwards;
+  }
+}

@@ -7,6 +7,9 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
+  "browserslist": [
+    "last 10 Chrome versions"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

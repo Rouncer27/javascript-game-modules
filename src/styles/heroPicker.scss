@@ -1,0 +1,17 @@
+.heroPicker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
+  &__title {
+    width: 100%;
+  }
+
+  &__card {
+    margin: 20px;
+  }
+}

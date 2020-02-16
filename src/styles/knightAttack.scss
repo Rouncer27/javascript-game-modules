@@ -1,0 +1,70 @@
+@keyframes attackSteps {
+  0% {
+    width: 116px;
+    height: 162px;
+    background-position: -0 -0;
+  }
+
+  12.5% {
+    width: 114px;
+    height: 164px;
+    background-position: -0 -162px;
+  }
+
+  25% {
+    width: 108px;
+    height: 166px;
+    background-position: -0 -326px;
+  }
+
+  37.5% {
+    width: 123px;
+    height: 166px;
+    background-position: -0 -492px;
+  }
+
+  50% {
+    width: 104px;
+    height: 169px;
+    background-position: -0 -992px;
+  }
+
+  62.5% {
+    width: 97px;
+    height: 171px;
+    background-position: -0 -1331px;
+  }
+
+  75% {
+    width: 114px;
+    height: 170px;
+    background-position: -0 -1161px;
+  }
+
+  87.5% {
+    width: 109px;
+    height: 168px;
+    background-position: -0 -824px;
+  }
+
+  100% {
+    width: 112px;
+    height: 166px;
+    background-position: -0 -658px;
+  }
+}
+
+.heroDashboard__gravitar {
+  .knight {
+    width: 116px;
+    height: 162px;
+    background-image: url("../images/hero-knight.png");
+  }
+
+  .knight.knight-attack {
+    background-image: url("../images/knight-actions/knight-attack.png");
+    background-size: initial;
+    background-position: -0 -0;
+    animation: attackSteps 0.75s steps(1) 0.1s backwards;
+  }
+}

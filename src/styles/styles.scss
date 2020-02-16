@@ -74,8 +74,8 @@ body {
     text-align: center;
   }
 
-  .cardGravitar {
-    max-width: 100px;
+  &__gravitar {
+    max-width: 150px;
     margin: 20px auto;
 
     img {
@@ -83,6 +83,19 @@ body {
       width: 100%;
       max-width: 100%;
     }
+  }
+
+  &__type {
+    text-align: center;
+    p {
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+
+  &__choose {
+    text-align: center;
   }
 
   .cardHealth {
@@ -93,3 +106,8 @@ body {
     }
   }
 }
+
+@import "./heroPicker.scss";
+@import "./heroDashboard.scss";
+// @import "./knightFall.scss";
+@import "./knightAttack.scss";
