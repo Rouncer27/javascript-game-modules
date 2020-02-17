@@ -20,7 +20,17 @@ const troll = {
   exp: 15
 };
 
-export const allEnemys = [slime, troll];
+const zombie = {
+  enemyType: "zombie",
+  gravitar: slimeImg,
+  health: 155,
+  strength: 18,
+  agility: 2,
+  speed: 2,
+  exp: 25
+};
+
+export const allEnemys = [slime, troll, zombie];
 
 class Enemy {
   constructor({ enemyType, gravitar, health, strength, agility, speed, exp }) {
@@ -43,5 +53,11 @@ export class Slime extends Enemy {
 export class Troll extends Enemy {
   constructor() {
     super({ ...troll });
+  }
+}
+
+export class Zombie extends Enemy {
+  constructor() {
+    super({ ...zombie });
   }
 }

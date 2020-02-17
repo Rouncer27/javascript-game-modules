@@ -10,8 +10,6 @@ const attackFightDecision = function(e, state, getTheRoot) {
   const heroChangeToStrike =
     (state.gameHero.speed * state.gameHero.agility) / randomNumber(1, 30);
 
-  console.log(heroChangeToStrike, emenyChangeToStrike);
-
   if (heroChangeToStrike >= emenyChangeToStrike) {
     attacksHeroFirst(state, getTheRoot, e.currentTarget);
   } else {
